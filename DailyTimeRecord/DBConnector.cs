@@ -94,5 +94,19 @@ namespace DailyTimeRecord
                 return result;
             }
         }
+
+        /***** STATEMENT FOR THE TABLE CREATION IN SQL
+            SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+            SET time_zone = "+00:00";
+         
+            CREATE TABLE IF NOT EXISTS `tbldtr` (
+            `LogID` int(11) NOT NULL AUTO_INCREMENT,
+            `Name` text NOT NULL,
+            `LogType` text NOT NULL,
+            `LogTime` time NOT NULL,
+            `LogDate` date NOT NULL,
+            PRIMARY KEY (`LogID`)
+            ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+        *****/
     }
 }

@@ -37,14 +37,9 @@ namespace DailyTimeRecord
             {
                 if (cmbName.Text != "")
                 {
-                    connector.Insert("Zel", "In");
-                    
-                    WriteInText(DateTime.Now.DayOfWeek.ToString() + " In " + DateTime.Now.ToString() + " " + cmbName.Text);                    
-                    
-                    MessageBox.Show("Welcome " + cmbName.Text + "!");                     
-                    if (_FinalVideoSource.IsRunning)
-                        _FinalVideoSource.Stop();
-                    Application.Exit();
+                    WriteInText(DateTime.Now.DayOfWeek.ToString() + " In " + DateTime.Now.ToString() + " " + cmbName.Text);
+                    WriteFileForToday("In," + cmbName.Text + "," + DateTime.Now.ToString("HH:mm:ss") + "," + DateTime.Now.ToString("MM/dd/yyyy"));
+                    InsertToDB("In", cmbName.Text);
                 }
                 else
                 {
@@ -63,15 +58,9 @@ namespace DailyTimeRecord
             {
                 if (cmbName.Text != "")
                 {
-                    connector.Insert("Zel", "Out");
-
                     WriteInText(DateTime.Now.DayOfWeek.ToString() + " Out " + DateTime.Now.ToString() + " " + cmbName.Text);
-                    
-                    MessageBox.Show("Goodbye " + cmbName.Text + "!");
-                    
-                    if (_FinalVideoSource.IsRunning)
-                        _FinalVideoSource.Stop();
-                    Application.Exit();
+                    WriteFileForToday("Out," + cmbName.Text + "," + DateTime.Now.ToString("HH:mm:ss") + "," + DateTime.Now.ToString("MM/dd/yyyy"));
+                    InsertToDB("Out", cmbName.Text);
                 }
                 else
                 {
@@ -84,7 +73,7 @@ namespace DailyTimeRecord
             }
         }
 
-        private void WriteInText(string x)
+        private void WriteInText(string line)
         {
             try
             {
@@ -100,14 +89,14 @@ namespace DailyTimeRecord
                 {
                     using (StreamWriter sw = File.CreateText(path))
                     {
-                        sw.WriteLine(x);
+                        sw.WriteLine(line);
                     }
                 }
                 else
                 {
                     using (StreamWriter sw = File.AppendText(path))
                     {
-                        sw.WriteLine(x);
+                        sw.WriteLine(line);
                     }
                 }
             }
@@ -125,17 +114,35 @@ namespace DailyTimeRecord
                 {
                     using (StreamWriter sw = File.CreateText(path))
                     {
-                        sw.WriteLine(x);
+                        sw.WriteLine(line);
                     }
                 }
                 else
                 {
                     using (StreamWriter sw = File.AppendText(path))
                     {
-                        sw.WriteLine(x);
+                        sw.WriteLine(line);
                     }
                 }
             }
+        }
+
+        private void WriteFileForToday(string line)
+        {
+        }
+
+        private void InsertToDB(string logType, string name)
+        {
+            connector.Insert(name, logType);
+
+            if(logType.Equals("In"))
+                MessageBox.Show("Welcome " + name + "!");
+            else if(logType.Equals("Out"))
+                MessageBox.Show("Goodbye " + name + "!");
+
+            if (_FinalVideoSource.IsRunning)
+                _FinalVideoSource.Stop();
+            Application.Exit();
         }
 
         private void Form1_Load(object sender, EventArgs e)
