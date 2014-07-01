@@ -1,0 +1,20 @@
+C:\Users\user 7\documents\visual studio 2010\Projects\DailyTimeRecord\DailyTimeRecord\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\user 7\documents\visual studio 2010\Projects\DailyTimeRecord\DailyTimeRecord\obj\x86\Release\DailyTimeRecord.Form1.resources
+C:\Users\user 7\documents\visual studio 2010\Projects\DailyTimeRecord\DailyTimeRecord\obj\x86\Release\DailyTimeRecord.Properties.Resources.resources
+C:\Users\user 7\documents\visual studio 2010\Projects\DailyTimeRecord\DailyTimeRecord\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\user 7\documents\visual studio 2010\Projects\DailyTimeRecord\DailyTimeRecord\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\user 7\documents\visual studio 2010\Projects\DailyTimeRecord\DailyTimeRecord\bin\Release\DailyTimeRecord.exe
+C:\Users\user 7\documents\visual studio 2010\Projects\DailyTimeRecord\DailyTimeRecord\bin\Release\DailyTimeRecord.pdb
+C:\Users\user 7\documents\visual studio 2010\Projects\DailyTimeRecord\DailyTimeRecord\obj\x86\Release\DailyTimeRecord.exe
+C:\Users\user 7\documents\visual studio 2010\Projects\DailyTimeRecord\DailyTimeRecord\obj\x86\Release\DailyTimeRecord.pdb
+C:\Users\user 7\Documents\Dropbox\DailyTimeRecord\DailyTimeRecord\obj\x86\Release\DailyTimeRecord.exe
+C:\Users\user 7\Documents\Dropbox\DailyTimeRecord\DailyTimeRecord\obj\x86\Release\DailyTimeRecord.pdb
+C:\Users\v-loogal\Documents\GitHub\DailyTimeRecord\DailyTimeRecord\obj\x86\Release\DailyTimeRecord.pdb
+C:\Users\v-loogal\Documents\GitHub\DailyTimeRecord\DailyTimeRecord\bin\Release\DailyTimeRecord.exe
+C:\Users\v-loogal\Documents\GitHub\DailyTimeRecord\DailyTimeRecord\bin\Release\DailyTimeRecord.pdb
+C:\Users\v-loogal\Documents\GitHub\DailyTimeRecord\DailyTimeRecord\obj\x86\Release\DailyTimeRecord.csprojResolveAssemblyReference.cache
+C:\Users\v-loogal\Documents\GitHub\DailyTimeRecord\DailyTimeRecord\obj\x86\Release\DailyTimeRecord.Form1.resources
+C:\Users\v-loogal\Documents\GitHub\DailyTimeRecord\DailyTimeRecord\obj\x86\Release\DailyTimeRecord.Properties.Resources.resources
+C:\Users\v-loogal\Documents\GitHub\DailyTimeRecord\DailyTimeRecord\obj\x86\Release\DailyTimeRecord.csproj.GenerateResource.Cache
+C:\Users\v-loogal\Documents\GitHub\DailyTimeRecord\DailyTimeRecord\obj\x86\Release\DailyTimeRecord.exe
+C:\Users\v-loogal\Documents\GitHub\DailyTimeRecord\DailyTimeRecord\bin\Release\MySql.Data.dll
